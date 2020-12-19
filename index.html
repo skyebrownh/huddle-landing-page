@@ -35,6 +35,8 @@
     <style>
       body {
         font-family: 'Open Sans', sans-serif;
+        background-color: hsl(257, 40%, 49%);
+        color: white;
       }
     </style>
     <!-- font awesome -->
@@ -43,21 +45,46 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="p-6">
+    <header class="w-full">
+      <img src="./images/logo.svg" alt="huddle logo" />
+    </header>
     <main>
-      <h2>Build The Community Your Fans Will Love</h2>
-      <p>
-        Huddle re-imagines the way we build communities. You have a voice, but
-        so does your audience. Create connections with your users as you engage
-        in genuine discussion.
-      </p>
-      <button>Register</button>
+      <!-- illustration -->
+      <img
+        src="./images/illustration-mockups.svg"
+        alt="illustration mockups"
+        class="block"
+      />
+      <!-- content -->
+      <div class="w-full text-center">
+        <h2
+          class="text-lg font-semibold mb-4"
+          style="font-family: 'Poppins', sans-serif"
+        >
+          Build The Community Your Fans Will Love
+        </h2>
+        <p class="mb-4">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <button
+          class="bg-white shadow-md py-3 w-3/4 rounded-full text-xs"
+          style="color: hsl(257, 40%, 49%)"
+        >
+          Register
+        </button>
+      </div>
     </main>
 
-    <footer>
+    <footer class="w-full text-center text-sm mt-2">
       <p>
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="underline"
           >Frontend Mentor</a
         >. Coded by Skye Brown.
       </p>

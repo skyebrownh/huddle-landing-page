@@ -30,6 +30,7 @@
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
+      type="text/css"
     />
     <!-- custom styles -->
     <style>
@@ -46,25 +47,32 @@
     ></script>
   </head>
   <body class="p-6">
+    <!-- background image -->
+    <img
+      src="./images/bg-mobile.svg"
+      alt="mobile background image"
+      class="absolute left-0 top-0 z-0"
+    />
+    <!-- header logo -->
     <header class="w-full">
-      <img src="./images/logo.svg" alt="huddle logo" />
+      <img src="./images/logo.svg" alt="huddle logo" class="w-32" />
     </header>
     <main>
       <!-- illustration -->
       <img
         src="./images/illustration-mockups.svg"
         alt="illustration mockups"
-        class="block"
+        class="block relative px-2 py-14 z-10"
       />
       <!-- content -->
-      <div class="w-full text-center">
+      <div class="w-full text-center mb-12">
         <h2
-          class="text-lg font-semibold mb-4"
+          class="text-xl font-semibold mb-4"
           style="font-family: 'Poppins', sans-serif"
         >
           Build The Community Your Fans Will Love
         </h2>
-        <p class="mb-4">
+        <p class="mb-5">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
@@ -76,9 +84,27 @@
           Register
         </button>
       </div>
+      <!-- socials -->
+      <div class="w-1/2 mx-auto flex justify-evenly">
+        <span
+          class="w-8 h-8 border border-white rounded-full text-white flex justify-center items-center"
+          style="background-color: hsl(257, 40%, 49%)"
+          ><i class="fab fa-facebook-f"></i
+        ></span>
+        <span
+          class="w-8 h-8 border border-white rounded-full text-white flex justify-center items-center"
+          style="background-color: hsl(257, 40%, 49%)"
+          ><i class="fab fa-twitter"></i
+        ></span>
+        <span
+          class="w-8 h-8 border border-white rounded-full text-white flex justify-center items-center"
+          style="background-color: hsl(257, 40%, 49%)"
+          ><i class="fab fa-instagram"></i
+        ></span>
+      </div>
     </main>
-
-    <footer class="w-full text-center text-sm mt-2">
+    <!-- attributiion -->
+    <footer class="w-full text-center text-xs mt-5">
       <p>
         Challenge by
         <a
